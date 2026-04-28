@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Démineur</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/stylemenu.css" />
+<link rel="stylesheet" href="css/styledemineur.css" />
+</head>
+<body>
+
+<!-- Menu -->
+<div id="menu-container"></div>
+
+<!-- JEU -->
+<div class="global">
+<div class="game-container">
+    <div class="game-header">
+        Démineur
+    </div>
+    
+    <div class="game-controls-top">
+        <div class="timer">⏱️ <span id="timer">00:00 </span></div>
+        <button id="reset-button" class="reset-button">😊</button>
+        <div class="mines-left">💣 <span id="mines-count">10</span></div>
+    </div>
+
+    <div id="board" class="game-board">
+        <!-- Les cellules du démineur seront générées ici par JavaScript -->
+    </div>
+    
+    <div id="game-over-screen" class="game-overlay hidden">
+        <h2 id="game-over-message"></h2>
+        <button id="play-again-button">Rejouer</button>
+    </div>
+
+    <div class="game-controls-bottom">
+        <label for="difficulty">Difficulté :</label>
+        <select id="difficulty">
+            <option value="easy">Facile (10x8, 10 mines)</option>
+            <option value="medium">Moyen (20x14, 40 mines)</option>
+            <option value="hard">Difficile (24x20, 99 mines)</option>
+        </select>
+    </div>
+</div>
+</div>
+
+<script src="js/scriptdemineur.js"></script>
+<script src="js/load-menu.js"></script>
+</body>
+</html>

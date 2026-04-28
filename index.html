@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accueil - Alexandre Bossiaux</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/stylemenu.css" />
+<link rel="stylesheet" href="css/styleindex.css" />
+</head>
+<body>
+
+<!-- Menu -->
+<div id="menu-container"></div>
+
+<!-- Slides -->
+<div class="global">
+<div class="index-container">
+
+  <div class="slides active" id="slides-0">
+    <h2>Bienvenue sur mon Portfolio !</h2>
+    <p class="description">Découvrez mon univers professionnel et mes réalisations. Utilisez les boutons ci-dessous ou les flèches pour naviguer.</p>
+  </div>
+
+  <div class="slides" id="slides-1">
+    <h2>Mon Portfolio Technique</h2>
+    <p class="description">Explorez mes travaux pratiques et projets personnels, démontrant mes compétences en programmation, réseaux et gestion de projets informatiques.</p>
+    <div class="button-group"> 
+      <a href="tps.html" class="button-link">Voir mes TPs</a>
+      <a href="projet.html" class="button-link">Voir mes Projets</a>
+    </div>
+  </div>
+
+  <div class="slides" id="slides-2">
+    <h2>Mes Expériences de Stage</h2>
+    <p class="description">Plongez dans le détail de mes stages en SIO1 et SIO2, avec les missions réalisées, les compétences acquises et les rapports de stage associés.</p>
+    <div class="button-group"> 
+      <a href="stagesio1.html" class="button-link">Stage SIO 1</a>
+      <a href="stagesio2.html" class="button-link">Stage SIO 2</a>
+    </div>
+  </div>
+
+  <div class="slides" id="slides-3">
+    <h2>Mon Curriculum Vitae</h2>
+    <p class="description">Retrouvez ici un aperçu détaillé de mon parcours académique, de mes expériences professionnelles et de mes compétences techniques et transversales.</p>
+    <a href="cv.html" class="button-link">Voir mon CV</a>
+  </div>
+
+  <div class="slides" id="slides-4">
+    <h2>Ma Lettre de Motivations</h2>
+    <p class="description">Découvrez ma lettre de motivation, où j'exprime mon intérêt et ma motivation à intégrer une entreprise, en soulignant mes atouts et ma polyvalence.</p>
+    <a href="lm.html" class="button-link">Lire ma Lettre</a>
+  </div>
+
+  <div class="slides" id="slides-5">
+    <h2>Mes Conventions de Stage</h2>
+    <p class="description">Retrouvez ici les documents officiels de mes conventions de stage pour les périodes SIO1 et SIO2. Ces conventions détaillent les engagements, les missions et les conditions de mes stages en entreprise.</p>
+    <div class="button-group">
+      <a href="conventionstagesio1.html" class="button-link">Convention SIO 1</a>
+      <a href="conventionstagesio2.html" class="button-link">Convention SIO 2</a>
+    </div>
+  </div>
+
+  <div class="slides" id="slides-6">
+    <h2>Ma Veille Technologique</h2>
+    <p class="description">Découvrez mes recherches et analyses sur des sujets technologiques actuels, reflétant ma curiosité et ma capacité à rester informé des dernières innovations.</p>
+    <div class="button-group"> 
+      <a href="veillesujet1.html" class="button-link">Voir ma Veille 1</a>
+      <a href="veillesujet2.html" class="button-link">Voir ma Veille 2</a>
+    </div>
+  </div>
+
+  <div class="slides" id="slides-7">
+    <h2>Mes Réalisations Ludiques</h2>
+    <p class="description">Amusez-vous avec mes mini-jeux développés en JavaScript, une démonstration concrète de mes compétences en développement web interactif.</p>
+    <a href="realisations.html" class="button-link">Jouer à mes Réalisations</a>
+  </div>
+
+  <div class="slides" id="slides-8">
+    <h2>Contactez-moi</h2>
+    <p class="description">Vous avez des questions, des opportunités à proposer ou souhaitez simplement échanger ? N'hésitez pas à me contacter directement.</p>
+    <a href="contact.html" class="button-link">Prendre Contact</a>
+  </div>
+</div>
+</div>
+
+
+<!-- Boutons de navigation -->
+<div class="slides-buttons" aria-label="Navigation des sections">
+  <button class="nav-arrow left-arrow" aria-label="Slide précédente">&#10094;</button>
+  <button class="active" aria-label="Section 0" data-slides="0"></button>
+  <button aria-label="Section 1" data-slides="1"></button>
+  <button aria-label="Section 2" data-slides="2"></button>
+  <button aria-label="Section 3" data-slides="3"></button>
+  <button aria-label="Section 4" data-slides="4"></button>
+  <button aria-label="Section 5" data-slides="5"></button>
+  <button aria-label="Section 6" data-slides="6"></button>
+  <button aria-label="Section 7" data-slides="7"></button>
+  <button aria-label="Section 8" data-slides="8"></button>
+  <button class="nav-arrow right-arrow" aria-label="Slide suivante">&#10095;</button>
+</div>
+
+<script src="js/scriptindex.js"></script>
+<script src="js/load-menu.js"></script>
+</body>
+</html>
