@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact - Alexandre Bossiaux</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/stylemenu.css" />
+<link rel="stylesheet" href="css/stylecontact.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Menu -->
+<div id="menu-container"></div>
+
+<!-- Section Contact -->
+<div class="global">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2>Me Contacter</h2>
+      <p>N'hésitez pas à me contacter pour toute question, opportunité ou simplement pour échanger !</p>
+    </div>
+
+    <div class="contact-info">
+      <!-- Carte Email -->
+      <div class="contact-card">
+        <div class="card-header" id="email-toggle">
+          <i class="fas fa-envelope icon"></i>
+          <h3>Email</h3>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="card-content hidden" id="email-content">
+          <span class="card-value">bossiaux.alexandre@gmail.com</span>
+          <a href="mailto:bossiaux.alexandre@gmail.com" class="action-link">
+            <i class="fas fa-paper-plane"></i> Envoyer un email
+          </a>
+        </div>
+      </div>
+
+      <!-- Carte Téléphone -->
+      <div class="contact-card">
+        <div class="card-header" id="phone-toggle">
+          <i class="fas fa-phone-alt icon"></i>
+          <h3>Téléphone</h3>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="card-content hidden" id="phone-content">
+          <span class="card-value">+33 6 58 30 66 25</span>
+          <a href="tel:+33658306625" class="action-link">
+            <i class="fas fa-phone"></i> Appeler
+          </a>
+        </div>
+      </div>
+
+      <!-- Carte LinkedIn -->
+      <div class="contact-card">
+        <div class="card-header" id="linkedin-toggle">
+          <i class="fab fa-linkedin icon"></i>
+          <h3>LinkedIn</h3>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="card-content hidden" id="linkedin-content">
+          <span class="card-value">Alexandre Bossiaux</span>
+          <a href="https://www.linkedin.com/in/alexandre-bossiaux-b2b2b2b2/" target="_blank" class="action-link">
+            <i class="fab fa-linkedin"></i> Voir le profil
+          </a>
+        </div>
+      </div>
+
+      <!-- Carte Adresse -->
+      <div class="contact-card">
+        <div class="card-header" id="address-toggle">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <h3>Adresse</h3>
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="card-content hidden" id="address-content">
+          <span class="card-value">Rivery, Picardie, France</span>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34411.36234478723!2d2.2944842071669695!3d49.90694689759592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e785ce2a38674f%3A0x4239bb6ec8f207f3!2sRivery!5e0!3m2!1sfr!2sfr!4v1760531282621!5m2!1sfr!2sfr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/load-menu.js"></script>
+<script src="js/scriptcontact.js"></script>
+</body>
+</html>

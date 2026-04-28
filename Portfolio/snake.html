@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/stylemenu.css" />
+<link rel="stylesheet" href="css/stylesnake.css" /> 
+</head>
+<body>
+
+<!-- Menu -->
+<div id="menu-container"></div>
+
+<!-- JEU -->
+<div class="global">
+<div class="game-container">
+    <div class="game-header">
+        Snake Game
+    </div>
+    
+    <div class="game-canvas-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <div class="score-board">
+            Score: <span id="score">0</span>
+        </div>
+        
+        <div id="start-screen" class="start-screen">
+            <h2>Snake Game</h2>
+            <p>Utilisez les flèches directionnelles pour déplacer le serpent et manger la nourriture !</p>
+            <button id="start-button">Commencer</button>
+        </div>
+        
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Game Over!</h2>
+            <p>Votre score: <span id="final-score">0</span></p>
+            <button id="restart-button">Rejouer</button>
+        </div>
+    </div>
+    
+    <div class="game-controls">
+        <div class="dpad">
+            <button id="up-button" class="dpad-button">▲</button>
+            <div class="dpad-horizontal"> 
+                <button id="left-button" class="dpad-button">◀</button>
+                <button id="down-button" class="dpad-button">▼</button> 
+                <button id="right-button" class="dpad-button">▶</button>
+            </div>
+        </div>
+        <p class="instructions">Ou utilisez les flèches de votre clavier</p>
+    </div>
+</div>
+</div>
+
+<script src="js/scriptsnake.js"></script>
+<script src="js/load-menu.js"></script>
+</body>
+</html>
